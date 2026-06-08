@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Admin Dashboard</title>
+
+<link rel="stylesheet"
+href="css/style.css">
+
+</head>
+<body>
+
+<header>
+
+<h1>ADMIN DASHBOARD</h1>
+
+<nav>
+
+<a href="admin.html">
+Dashboard
+</a>
+
+<a href="admin-reports.html">
+Reports
+</a>
+
+<a href="#"
+onclick="logout()">
+Logout
+</a>
+
+</nav>
+
+</header>
+
+<div class="admin-grid">
+
+<div class="admin-card">
+
+<h3>Total Users</h3>
+
+<p id="totalUsers">0</p>
+
+</div>
+
+<div class="admin-card">
+
+<h3>Total Teams</h3>
+
+<p id="totalTeams">0</p>
+
+</div>
+
+<div class="admin-card">
+
+<h3>Total Tournaments</h3>
+
+<p id="totalTournaments">0</p>
+
+</div>
+
+<div class="admin-card">
+
+<h3>Total Matches</h3>
+
+<p id="totalMatches">0</p>
+
+</div>
+
+</div>
+
+<div class="team-container">
+
+<h2>Create Tournament</h2>
+
+<form id="tournamentForm">
+
+<input
+type="text"
+id="tournamentName"
+placeholder="Tournament Name"
+required>
+
+<select id="tournamentType">
+
+<option value="Round Robin">
+Round Robin
+</option>
+
+<option value="Knockout">
+Knockout
+</option>
+
+</select>
+
+<input
+type="number"
+id="maxTeams"
+placeholder="Maximum Teams"
+required>
+
+<button type="submit">
+Create Tournament
+</button>
+
+</form>
+
+<hr>
+
+<h2>Tournaments</h2>
+
+<div id="adminTournamentList"></div>
+
+</div>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
